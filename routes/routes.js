@@ -6,6 +6,19 @@ let names = [..._names];
 
 /**
  * @swagger
+ * /api/names:
+ *   get:
+ *     summary: Returns names
+ *     description: Returns the names from the list
+ *     responses:
+ *       200:
+ *         description: Successful response with the names
+ */
+router.get('/names', (req,res) => {
+    res.send(_names.sort());
+})
+/**
+ * @swagger
  * /api/draw:
  *   get:
  *     summary: Draw a name
