@@ -80,6 +80,10 @@ router.post('/reset', (req,res) => {
     res.send("Successful");
 })
 
+router.get('/check', (req,res) => {
+    res.send(names)
+})
+
 
 const drawName = (index) => {
     return names[index];
