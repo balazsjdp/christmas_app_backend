@@ -1,11 +1,14 @@
 // app.js
 const express = require('express');
+const cors = require('cors')
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 
 const app = express();
 const port = process.env.PORT || 3000;
 const routes = require("./routes/routes")
+
+app.use(cors());
 
 const options = {
     swaggerDefinition: {
