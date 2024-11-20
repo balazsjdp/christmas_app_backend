@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const _names = ["Balázs", "Kriszti", "Lilla", "Geri", "Marci", "Ádám", "Peti", "Sanyi", "Palázs", "Laci", "István", "Benji"];
+const _names = ["Balázs", "Kriszti", "Lilla", "Geri", "Marci", "Ádám", "Peti", "Palázs", "Laci", "Isti", "Benji", "Alex", "Tibi", "Gina"];
 let names = [..._names];
 
 /**
